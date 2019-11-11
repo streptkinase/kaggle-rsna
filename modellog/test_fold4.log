@@ -1,0 +1,90 @@
+
+----- 2019-10-27 17:12:36 -----
+/mnt/disks/mount_point/rsna_root/kaggle-rsna-intracranial-hemorrhage/src/cnn/main.py test ./conf/model001.py --snapshot ./model/model001/fold4_ep2.pt --output ./model/model001/fold4_ep2_test_tta5.pkl --n-tta 5 --fold 4 --gpu 0
+logpath: ./model/model001/test_fold4.log
+mode: test
+workdir: ./model/model001
+fold: 4
+batch size: 28
+acc: 1
+resume_from: None
+model: se_resnext50_32x4d
+pretrained: imagenet
+not loading optim
+loaded model from ./model/model001/fold4_ep2.pt
+dataset_policy: all
+window_policy: 2
+applied dataset_policy all (78363 records)
+use default(random) sampler
+
+
+
+
+
+saved to ./model/model001/fold4_ep2_test_tta5.pkl
+
+----- 2019-11-05 07:33:09 -----
+/mnt/disks/mount_point/rsna_root/kaggle-rsna-intracranial-hemorrhage/src/cnn/main.py test ./conf/model001.py --snapshot ./model/model001/fold4_ep2.pt --output ./model/model001/fold4_ep2_test_tta5.pkl --n-tta 5 --fold 4 --gpu 0
+logpath: ./model/model001/test_fold4.log
+mode: test
+workdir: ./model/model001
+fold: 4
+batch size: 28
+acc: 1
+resume_from: None
+model: se_resnext50_32x4d
+pretrained: imagenet
+not loading optim
+loaded model from ./model/model001/fold4_ep2.pt
+dataset_policy: all
+window_policy: 2
+applied dataset_policy all (119489 records)
+use default(random) sampler
+
+----- 2019-11-05 16:40:39 -----
+/mnt/disks/mount_point/rsna_root/kaggle-rsna-intracranial-hemorrhage/src/cnn/main.py test ./conf/model001.py --snapshot ./model/model001/fold4_ep2.pt --output ./model/model001/fold4_ep2_test_tta5.pkl --n-tta 5 --fold 4 --gpu 0
+logpath: ./model/model001/test_fold4.log
+mode: test
+workdir: ./model/model001
+fold: 4
+batch size: 28
+acc: 1
+resume_from: None
+model: se_resnext50_32x4d
+pretrained: imagenet
+not loading optim
+loaded model from ./model/model001/fold4_ep2.pt
+dataset_policy: all
+window_policy: 2
+applied dataset_policy all (119489 records)
+use default(random) sampler
+
+
+
+
+
+saved to ./model/model001/fold4_ep2_test_tta5.pkl
+
+----- 2019-11-06 09:56:29 -----
+/mnt/disks/mount_point/rsna_root/kaggle-rsna-intracranial-hemorrhage/src/cnn/main.py test ./conf/model001.py --snapshot ./model/model001/fold4_ep2.pt --output ./model/model001/fold4_ep2_test_tta5.pkl --n-tta 5 --fold 4 --gpu 0
+logpath: ./model/model001/test_fold4.log
+mode: test
+workdir: ./model/model001
+fold: 4
+batch size: 28
+acc: 1
+resume_from: None
+model: se_resnext50_32x4d
+pretrained: imagenet
+not loading optim
+loaded model from ./model/model001/fold4_ep2.pt
+dataset_policy: all
+window_policy: 2
+applied dataset_policy all (119489 records)
+use default(random) sampler
+
+
+
+
+
+saved to ./model/model001/fold4_ep2_test_tta5.pkl

@@ -1,0 +1,139 @@
+
+----- 2019-10-22 12:01:14 -----
+/mnt/disks/mount_point/rsna_root/kaggle-rsna-intracranial-hemorrhage/src/cnn/main.py train ./conf/model001.py --fold 2 --gpu 0
+logpath: ./model/model001/train_fold2.log
+mode: train
+workdir: ./model/model001
+fold: 2
+batch size: 28
+acc: 1
+model: se_resnext50_32x4d
+pretrained: imagenet
+loss: BCEWithLogitsLoss
+optim: Adam
+dataset_policy: all
+window_policy: 2
+read dataset (531982 records)
+applied dataset_policy all (531982 records)
+use default(random) sampler
+dataset_policy: all
+window_policy: 2
+read dataset (133432 records)
+applied dataset_policy all (133432 records)
+use default(random) sampler
+train data: loaded 531982 records
+valid data: loaded 133432 records
+last_epoch: -1
+apex True
+
+----- epoch 0 -----
+[train] 18999/18999 9831(s) eta:0(s) loss:0.101932 loss200:0.097410 lr:6.00e-05 auc:0.9688 micro:0.9739 macro:0.9637
+0.087372 [0.140411 0.018689 0.109189 0.093125 0.045512 0.064268]
+[valid] 4766/4766 1579(s) eta:0(s) loss:0.092584 loss200:0.088477 lr:0.00e+00 auc:0.9764 micro:0.9802 macro:0.9726
+0.079371 [0.130299 0.019168 0.099178 0.080649 0.034098 0.061906]
+saved model to ./model/model001/fold2_ep0.pt
+[best] ep:0 loss:0.0926 score:0.0794
+
+----- epoch 1 -----
+[train] 18999/18999 10016(s) eta:0(s) loss:0.081719 loss200:0.081653 lr:4.00e-05 auc:0.9817 micro:0.9845 macro:0.9790
+0.070044 [0.112569 0.015015 0.090328 0.076915 0.033144 0.049766]
+[valid] 4766/4766 1588(s) eta:0(s) loss:0.085534 loss200:0.080724 lr:0.00e+00 auc:0.9793 micro:0.9829 macro:0.9757
+0.073328 [0.118318 0.022099 0.090621 0.077176 0.034468 0.052295]
+saved model to ./model/model001/fold2_ep1.pt
+[best] ep:1 loss:0.0855 score:0.0733
+
+----- epoch 2 -----
+[train] 18999/18999 10018(s) eta:0(s) loss:0.072827 loss200:0.069660 lr:2.67e-05 auc:0.9862 micro:0.9881 macro:0.9842
+0.062424 [0.09976  0.012906 0.081803 0.07017  0.02869  0.043876]
+[valid] 4766/4766 1602(s) eta:0(s) loss:0.083005 loss200:0.079413 lr:0.00e+00 auc:0.9813 micro:0.9843 macro:0.9782
+0.071150 [0.117394 0.018031 0.089442 0.074856 0.030324 0.050607]
+saved model to ./model/model001/fold2_ep2.pt
+[best] ep:2 loss:0.0830 score:0.0711
+
+----- 2019-10-24 04:32:17 -----
+/mnt/disks/mount_point/rsna_root/kaggle-rsna-intracranial-hemorrhage/src/cnn/main.py train ./conf/model001.py --fold 2 --gpu 0 --resume_from fold2_ep2.pt
+logpath: ./model/model001/train_fold2.log
+
+----- 2019-10-24 12:45:27 -----
+/mnt/disks/mount_point/rsna_root/kaggle-rsna-intracranial-hemorrhage/src/cnn/main.py train ./conf/model001.py --fold 2 --gpu 0 --resume_from model/model001/fold2_ep2.pt
+logpath: ./model/model001/train_fold2.log
+mode: train
+workdir: ./model/model001
+fold: 2
+batch size: 28
+acc: 1
+resume_from: model/model001/fold2_ep2.pt
+model: se_resnext50_32x4d
+pretrained: imagenet
+loss: BCEWithLogitsLoss
+optim: Adam
+loading optim too
+loaded model from model/model001/fold2_ep2.pt
+dataset_policy: all
+window_policy: 2
+read dataset (531982 records)
+applied dataset_policy all (531982 records)
+use default(random) sampler
+dataset_policy: all
+window_policy: 2
+read dataset (133432 records)
+applied dataset_policy all (133432 records)
+use default(random) sampler
+train data: loaded 531982 records
+valid data: loaded 133432 records
+last_epoch: 2
+apex True
+
+----- 2019-10-25 09:01:53 -----
+/mnt/disks/mount_point/rsna_root/kaggle-rsna-intracranial-hemorrhage/src/cnn/main.py train ./conf/model001.py --fold 2 --gpu 0 --resume_from model/model001/fold2_ep2.pt
+logpath: ./model/model001/train_fold2.log
+mode: train
+workdir: ./model/model001
+fold: 2
+batch size: 28
+acc: 1
+resume_from: model/model001/fold2_ep2.pt
+model: se_resnext50_32x4d
+pretrained: imagenet
+loss: BCEWithLogitsLoss
+optim: Adam
+loading optim too
+loaded model from model/model001/fold2_ep2.pt
+dataset_policy: all
+window_policy: 2
+read dataset (531982 records)
+applied dataset_policy all (531982 records)
+use default(random) sampler
+dataset_policy: all
+window_policy: 2
+read dataset (133432 records)
+applied dataset_policy all (133432 records)
+use default(random) sampler
+train data: loaded 531982 records
+valid data: loaded 133432 records
+last_epoch: 2
+apex True
+
+----- epoch 3 -----
+[train] 18999/18999 10271(s) eta:0(s) loss:0.066051 loss200:0.059735 lr:1.78e-05 auc:0.9890 micro:0.9905 macro:0.9876
+0.056617 [0.08987  0.011265 0.074757 0.064689 0.025876 0.039995]
+[valid] 4766/4766 1763(s) eta:0(s) loss:0.084884 loss200:0.078788 lr:0.00e+00 auc:0.9811 micro:0.9842 macro:0.9780
+0.072811 [0.120846 0.018061 0.092394 0.075584 0.030489 0.051459]
+saved model to ./model/model001/fold2_ep3.pt
+[best] ep:2 loss:0.0830 score:0.0711
+
+----- epoch 4 -----
+[train] 18999/18999 10354(s) eta:0(s) loss:0.061273 loss200:0.059364 lr:1.78e-05 auc:0.9908 micro:0.9919 macro:0.9897
+0.052528 [0.082601 0.009695 0.069339 0.061578 0.024408 0.037476]
+[valid] 4766/4766 1841(s) eta:0(s) loss:0.090028 loss200:0.083171 lr:0.00e+00 auc:0.9793 micro:0.9828 macro:0.9757
+0.077259 [0.130097 0.021287 0.101395 0.077025 0.029508 0.051404]
+saved model to ./model/model001/fold2_ep4.pt
+[best] ep:2 loss:0.0830 score:0.0711
+
+----- epoch 5 -----
+[train] 18999/18999 10374(s) eta:0(s) loss:0.056879 loss200:0.056864 lr:1.78e-05 auc:0.9922 micro:0.9931 macro:0.9913
+0.048759 [0.076066 0.008517 0.064712 0.058224 0.022869 0.034861]
+[valid] 4766/4766 1823(s) eta:0(s) loss:0.089465 loss200:0.085090 lr:0.00e+00 auc:0.9791 micro:0.9827 macro:0.9755
+0.076593 [0.127893 0.020797 0.097783 0.080051 0.029706 0.052025]
+saved model to ./model/model001/fold2_ep5.pt
+[best] ep:2 loss:0.0830 score:0.0711
